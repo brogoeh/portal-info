@@ -1,302 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>InfoWeb - Portal Informasi</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="text-white bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 overflow-x-hidden">
+    <!-- Navbar -->
+
+    <nav class="fixed top-0 left-0 w-screen bg-slate-950/40 backdrop-blur-2xl border-b border-white/10 backdrop-blur-lg shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-center h-16">
+          <div class="text-lg md:text-2xl font-bold italic text-white uppercase">Portal Informasi</div>
+
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-blue-600">Beranda</a>
+            <a href="#fitur" class="hover:text-blue-600">Info</a>
+            <a href="#artikel" class="hover:text-blue-600">Proposal</a>
+            <a href="#kontak" class="hover:text-blue-600">Kontak</a>
+          </div>
+
+          <button id="menuBtn" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden pb-5 md:hidden">
+          <a href="#home" class="block py-2">Beranda</a>
+          <a href="#fitur" class="block py-2">Info</a>
+          <a href="#artikel" class="block py-2">Proposal</a>
+          <a href="#kontak" class="block py-2">Kontak</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section id="home" class="text-sm text-slate-300 py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div class="fade mb-10 md:mb-0">
+            <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm"> Portal Informasi Terpercaya </span>
+
+            <h1 class="mt-6 text-2xl md:text-5xl font-bold leading-relaxed tracking-tighter">
+              Tabligh Akbar
+              <span class="text-blue-600"> Memperingati </span>
+
+              Maulid Nabi Muhammad Shallallahu 'Alaihi Wasallam 1448 H
+            </h1>
+            <p class="italic text-lg tracking-tighter my-4">"Dan Kami tidak mengutus engkau(Muhammad) melainkan untuk (menjadi) rahmat bagi seluruh alam." <span class="font-semibold">(QS.Al-Anbiya:107)</span></p>
+
+            <p class="mt-6 text-base md:text-lg text-slate-300 tracking-tighter">
+              <a href="#info" class="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-full capitalize shadow-lg shadow-indigo-900/40">informasi lengkap</a>
+            </p>
+          </div>
+
+          <div class="fade flex justify-center relative">
+            <!-- Glow -->
+
+            <!-- <div class="image-glow"></div> -->
+
+            <!-- Floating Blob Image -->
+
+            <img src="img/rasulullah.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- info -->
+
+    <section id="info" class="py-20 bg-slate-900/40">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div class="fade flex justify-center relative">
+            <!-- Glow -->
+
+            <!-- <div class="image-glow"></div> -->
+
+            <!-- Floating Blob Image -->
+
+            <img src="img/ustad.png" class="rounded-full border-t border-orange-700 shadow-xl" />
+          </div>
+          <div class="fade">
+            <div class="text-2xl md:text-4xl my-10 tracking-tighter">
+              <span class="text-3xl md:text-5xl text-blue-600 font-bold leading-relaxed italic">Hadirilah!</span><br />
+              Tabligh Akbar <br />
+              Dengan Penceramah <br />
+              <span class="font-bold italic">K.H. Nurfadilah Yusuf (dikenal dengan Ustadz Tile)</span>
+            </div>
+            <div class="text-lg md:text-xl leading-relaxed tracking-tighter text-justify">
+              <span class="font-semibold text-xl md:text-2xl mb-2 md:mb-5 block"> Informasi singkat</span>
+              Ustadz Tile yang memiliki nama asli Nurfadilah Yusuf adalah seorang pendakwah dan komedian betawi yang terkenal dengan gaya ceramahnya yang kocak, segar dan sarat akan pesan moral. Ustadz kelahiran Betawi 11 Juni 1982 dan
+              pernah menempuh pendidikan di Pondok Pesantren Az-Ziyadah, Klender Jakarta Timur. Ia sering memadukan syiar islam dengan budaya dan humor khas betawi, sehingga dakwahnya sangat digemari oleh berbagai kalangan masyarakat.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<title>InfoWeb - Portal Informasi</title>
+    <!-- Fitur -->
 
-<script src="https://cdn.tailwindcss.com"></script>
-<link  rel="stylesheet" href="style.css">
+    <section id="fitur" class="py-20 bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14 fade">
+          <h2 class="text-3xl md:text-4xl font-bold">Info Acara</h2>
 
-</head>
+          <p class="mt-4 text-slate-400">hari, tanggal, waktu beserta lokasi</p>
+        </div>
 
-<body class="text-white bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 overflow-x-hidden">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="glass p-8 rounded-2xl shadow hover:shadow-xl transition fade">
+            <div class="text-5xl mb-4">📰</div>
 
-<!-- Navbar -->
+            <h3 class="font-bold text-2xl md:text-xl">Hari dan Tanggal</h3>
 
-<nav class="fixed top-0 left-0 w-screen bg-slate-950/40 backdrop-blur-2xl border-b border-white/10 backdrop-blur-lg shadow-sm z-50">
+            <p class="mt-3 text-lg md:text-base">Sabtu, 5 September 2026</p>
+          </div>
 
-<div class="max-w-7xl mx-auto px-6">
+          <div class="glass p-8 rounded-2xl shadow hover:shadow-xl transition fade">
+            <div class="text-5xl mb-4">⚡</div>
 
-<div class="flex justify-between items-center h-16">
+            <h3 class="font-bold text-2xl md:text-xl">Waktu</h3>
 
-<div class="text-lg md:text-2xl font-bold italic text-white uppercase">
-Portal Informasi
-</div>
+            <p class="mt-3 text-lg md:text-base">12.00 WIB s/d selesai</p>
+          </div>
 
-<div class="hidden md:flex space-x-8">
+          <div class="glass p-8 rounded-2xl shadow hover:shadow-xl transition fade">
+            <div class="text-5xl mb-4">📱</div>
 
-<a href="#home" class="hover:text-blue-600">Beranda</a>
-<a href="#fitur" class="hover:text-blue-600">Info</a>
-<a href="#artikel" class="hover:text-blue-600">Proposal</a>
-<a href="#kontak" class="hover:text-blue-600">Kontak</a>
+            <h3 class="font-bold text-2xl md:text-xl">Lokasi</h3>
 
-</div>
+            <p class="mt-3 text-lg md:text-base">
+              <span class="font-semibold text-xl">Masjid Al-Haq</span> <br />
+              Jl. Haruman 5 RT.006 RW.014 Kelurahan Kayuringin Jaya, Kecamatan Bekasi Selatan
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<button id="menuBtn" class="md:hidden">
+    <!-- Artikel -->
 
-<svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <section id="artikel" class="py-20 bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12 fade">
+          <h2 class="text-3xl md:text-4xl font-bold">Proposal</h2>
+        </div>
+        <a href="https://i.imgur.com/xXNiOt0.jpeg" class="bg-blue-600 rounded-3xl px-7 py-2 mx-auto block hover:bg-blue-600/40 transition duration-50 text-center w-64 leading-relaxed font-semibold shadow-lg shadow-indigo-900/40">
+          &rarr; Download Proposal &larr;</a
+        >
+      </div>
+    </section>
 
-<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-d="M4 6h16M4 12h16M4 18h16"/>
+    <!-- CTA -->
 
-</svg>
+    <section class="py-20 bg-slate-900/40 text-white">
+      <div class="max-w-5xl mx-auto text-center px-6 fade">
+        <h2 class="text-3xl md:text-5xl font-bold">Tebar kebaikan</h2>
 
-</button>
+        <p class="mt-6 text-lg italic">"Sampaikanlah dariku walau hanya satu ayat." <span class="font-bold">(HR.Bukhari)</span></p>
 
-</div>
+        <div class="mt-8"></div>
+      </div>
+    </section>
 
-<div id="mobileMenu" class="hidden pb-5 md:hidden">
+    <!-- Footer -->
 
-<a href="#home" class="block py-2">Beranda</a>
-<a href="#fitur" class="block py-2">Info</a>
-<a href="#artikel" class="block py-2">Proposal</a>
-<a href="#kontak" class="block py-2">Kontak</a>
+    <footer id="kontak" class="bg-slate-900 text-gray-300 py-10">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between">
+        <div>
+          <h2 class="text-2xl font-bold text-white">InfoWeb</h2>
 
-</div>
+          <p class="mt-3">Portal Informasi.</p>
+        </div>
 
-</div>
+        <div class="mt-6 md:mt-0">
+          <p>Email : info@infoweb.id</p>
 
-</nav>
+          <p>© 2026 InfoWeb</p>
+        </div>
+      </div>
+    </footer>
 
-<!-- Hero -->
-
-<section id="home" class="text-sm text-slate-300 py-24">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="grid lg:grid-cols-2 gap-10 items-center">
-
-<div class="fade mb-10 md:mb-0">
-
-<span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">
-Portal Informasi Terpercaya
-</span>
-
-<h1 class="mt-6 text-2xl md:text-5xl font-bold leading-relaxed tracking-tighter">
-
-Tabligh Akbar
-<span class="text-blue-600">
-Memperingati
-</span>
-
-Maulid Nabi Muhammad Shallallahu 'Alaihi Wasallam 1448 H
-
-</h1>
-<p class="italic text-lg tracking-tighter my-4">
-"Dan Kami tidak mengutus engkau(Muhammad) melainkan untuk (menjadi) rahmat bagi seluruh alam." <span class="font-semibold">(QS.Al-Anbiya:107)</span>
-</p>
-
-<p class="mt-6 text-base md:text-lg text-slate-300 tracking-tighter">
- <a href="#info" class="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-full capitalize shadow-lg shadow-indigo-900/40">informasi lengkap</a>
-</p>
-</div>
-
-<div class="fade flex justify-center relative">
-
-    <!-- Glow -->
-
-    <!-- <div class="image-glow"></div> -->
-
-    <!-- Floating Blob Image -->
-
-    <img
-    src="img/rasulullah.png">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- info -->
-
-<section id="info" class="py-20 bg-slate-900/40">
-
-<div class="max-w-6xl mx-auto px-6">
-<div class="grid lg:grid-cols-2 gap-10 items-center">
-<div class="fade flex justify-center relative">
-<!-- Glow -->
-
-    <!-- <div class="image-glow"></div> -->
-
-    <!-- Floating Blob Image -->
-
-    <img
-    src="img/ustad.png"class="rounded-full border-t border-orange-700 shadow-xl">
-</div>
-<div class="fade">
-<div class="text-2xl md:text-4xl my-10 tracking-tighter"><span class="text-3xl md:text-5xl text-blue-600 font-bold leading-relaxed italic">Hadirilah!</span><br/>
- Tabligh Akbar <br/> Dengan Penceramah <br/> <span class="font-bold italic">K.H. Nurfadilah Yusuf (dikenal dengan Ustadz Tile)</span>
- </div>
-<div class="text-lg md:text-xl leading-relaxed tracking-tighter text-justify">
-<span class="font-semibold text-xl md:text-2xl mb-2  md:mb-5 block"> Informasi singkat</span>
-Ustadz Tile yang memiliki nama asli Nurfadilah Yusuf adalah seorang pendakwah dan komedian betawi yang terkenal dengan 
-gaya ceramahnya yang kocak, segar dan sarat akan pesan moral. 
-Ustadz kelahiran Betawi 11 Juni 1982 dan pernah menempuh pendidikan di Pondok Pesantren Az-Ziyadah, Klender Jakarta Timur. Ia sering memadukan syiar islam dengan budaya dan humor khas 
-betawi, sehingga dakwahnya sangat digemari oleh berbagai kalangan masyarakat.
-</div>
-</div>
-</div>
-</div>
-
-</section>
-
-<!-- Fitur -->
-
-<section id="fitur" class="py-20 bg-slate-900/40">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="text-center mb-14 fade">
-
-<h2 class="text-3xl md:text-4xl font-bold">
-Info Acara
-</h2>
-
-<p class="mt-4 text-slate-400">
-hari, tanggal, waktu beserta lokasi
-
-</p>
-
-</div>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="glass p-8 rounded-2xl shadow hover:shadow-xl transition fade">
-
-<div class="text-5xl mb-4">
-📰
-</div>
-
-<h3 class="font-bold text-2xl md:text-xl">
-Hari dan Tanggal
-</h3>
-
-<p class="mt-3 text-lg md:text-base">
-Sabtu, 5 September 2026
-</p>
-
-</div>
-
-<div class="glass p-8 rounded-2xl shadow hover:shadow-xl transition fade">
-
-<div class="text-5xl mb-4">
-⚡
-</div>
-
-<h3 class="font-bold text-2xl md:text-xl">
-Waktu
-</h3>
-
-<p class="mt-3 text-lg md:text-base">
-12.00 WIB s/d selesai
-</p>
-
-</div>
-
-<div class="glass p-8 rounded-2xl shadow hover:shadow-xl transition fade">
-
-<div class="text-5xl mb-4">
-📱
-</div>
-
-<h3 class="font-bold text-2xl md:text-xl">
-Lokasi
-</h3>
-
-<p class="mt-3 text-lg md:text-base">
-<span class="font-semibold text-xl">Masjid Al-Haq</span> <br>
-Jl. Haruman 5 RT.006 RW.014 Kelurahan Kayuringin Jaya, Kecamatan Bekasi Selatan
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Artikel -->
-
-<section id="artikel" class="py-20 bg-slate-900/40">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="text-center mb-12 fade">
-
-<h2 class="text-3xl md:text-4xl font-bold">
-Proposal
-</h2>
-
-</div>
-<a href="https://drive.google.com/file/d/1Xfb1sodBA7jAao_RqQzFuUuIosKUszo3/view?usp=sharing" class="bg-blue-600 rounded-3xl px-7 py-2 mx-auto block hover:bg-blue-600/40 transition duration-50 text-center w-64 leading-relaxed font-semibold shadow-lg shadow-indigo-900/40"> &rarr; Download Proposal &larr;</a>
-</div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="py-20 bg-slate-900/40 text-white">
-
-<div class="max-w-5xl mx-auto text-center px-6 fade">
-
-<h2 class="text-3xl md:text-5xl font-bold">
-
-Tebar kebaikan
-
-</h2>
-
-<p class="mt-6 text-lg italic">
-"Sampaikanlah dariku walau hanya satu ayat." <span class="font-bold">(HR.Bukhari)</span>
-</p>
-
-<div class="mt-8">
-
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Footer -->
-
-<footer id="kontak" class="bg-slate-900 text-gray-300 py-10">
-
-<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between">
-
-<div>
-
-<h2 class="text-2xl font-bold text-white">
-InfoWeb
-</h2>
-
-<p class="mt-3">
-
-Portal Informasi.
-
-</p>
-
-</div>
-
-<div class="mt-6 md:mt-0">
-
-<p>Email : info@infoweb.id</p>
-
-<p>© 2026 InfoWeb</p>
-
-</div>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
